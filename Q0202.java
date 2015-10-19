@@ -1,4 +1,4 @@
-class test0202 {
+class Q0202 {
   public static void main(String[] args){
 	double a = 5.5;
 	double b = 10.0;
