@@ -30,16 +30,17 @@ public class Janken{
 	Scanner scanner = new Scanner(System.in);
 	Random random = new Random();
 
-	System.out.println("自分:");
+	System.out.println("0はグー　1はパー　2はチョキ");
+	System.out.print("自分:");
 	int player = scanner.nextInt();
-	System.out.println("相手:");
+	System.out.print("相手:");
 	int cpu = random.nextInt(3);
 	System.out.println(cpu);
 	
 	if(result(player, cpu) == 2){
-	    System.out.println("勝");
+	    System.out.println("自分の勝ち");
 	}else if(result(player, cpu) == 1){
-	    System.out.println("負");
+	    System.out.println("自分の負け");
 	}else if(result(player, cpu) == 0){
 	    System.out.println("あいこ");
 	}
